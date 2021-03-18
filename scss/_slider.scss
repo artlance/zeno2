@@ -1,0 +1,199 @@
+.slick-slider {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+.slick-list {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+.slick-list.dragging {
+    cursor: pointer;
+    cursor: hand;
+}
+.slick-slider .slick-list,
+.slick-track,
+.slick-slide,
+.slick-slide img {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+.slick-track {
+    position: relative;
+    left: 0;
+    top: 0;
+    display: block;
+    zoom: 1;
+}
+.slick-track:before,
+.slick-track:after {
+    content: "";
+    display: table;
+}
+.slick-track:after {
+    clear: both;
+}
+.slick-loading .slick-track {
+    visibility: hidden;
+}
+.slick-slide {
+    float: left;
+    height: 100%;
+    min-height: 1px;
+    display: none;
+}
+.slick-slide img {
+    display: block;
+}
+.slick-slide.slick-loading img {
+    display: none;
+}
+.slick-slide.dragging img {
+    pointer-events: none;
+}
+.slick-initialized .slick-slide {
+    display: block;
+}
+.slick-vertical .slick-slide {
+    display: block;
+    height: auto;
+}
+.slick-prev,
+.slick-next {
+    z-index: 2;
+    position: absolute;
+    height: 150px;
+    width: 30px;
+    background: $white url('../upload/ic_next.svg') no-repeat 50% 50%;
+    background-size: 24px;
+    top: 0px;
+    text-indent: -9999px;
+    border: 0;
+    left: -20px;
+    border-radius: 6px;
+    transition: background-color $d $f;
+    &:hover {
+      background-color: #f5f5f5;
+    }
+}
+.slick-prev {
+  transform: rotate(180deg);
+}
+.slick-next {
+    left: auto;
+    right: -20px;
+}
+.slick-prev.slick-disabled,
+.slick-next.slick-disabled {
+    opacity: 0.25;
+    cursor: default;
+}
+.slick-dots {
+    position: absolute;
+    bottom: 0px;
+    list-style: none;
+    display: block;
+    text-align: center;
+    padding: 0px;
+    width: 100%;
+}
+.slick-dots li {
+    display: inline-block;
+    height: 8px;
+    width: 8px;
+    margin: 0px 5px;
+}
+.slick-dots li button {
+    border: 0;
+    opacity: 0.2;
+    background: #28282A;
+    display: block;
+    height: 8px;
+    width: 8px;
+    font-size: 0;
+    line-height: 0;
+    transition: opacity $d $f;
+    border-radius: 50%;
+}
+.slick-dots li.slick-active button {
+    opacity: 1 !important;
+}
+
+//
+
+.rangeslider,
+.rangeslider__fill {
+  display: block;
+  border-radius: 2px;
+}
+
+.rangeslider {
+  background: $primary;
+  position: relative;
+}
+
+.rangeslider--horizontal {
+  height: 4px;
+  width: 100%;
+}
+
+.rangeslider--vertical {
+  width: 20px;
+  min-height: 150px;
+  max-height: 100%;
+}
+
+.rangeslider--disabled {
+  opacity: 0.4;
+}
+
+.rangeslider__fill {
+  background: $primary;
+  position: absolute;
+}
+.rangeslider--horizontal .rangeslider__fill {
+  top: 0;
+  height: 100%;
+}
+.rangeslider--vertical .rangeslider__fill {
+  bottom: 0;
+  width: 100%;
+}
+
+.rangeslider__handle {
+  background: white;
+  border: 0;
+  cursor: pointer;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  background: $white;
+  border-radius: 50%;
+}
+
+
+.rangeslider--horizontal .rangeslider__handle {
+  top: -19px;
+  touch-action: pan-y;
+
+}
+.rangeslider--vertical .rangeslider__handle {
+  left: -10px;
+  touch-action: pan-x;
+
+}
+

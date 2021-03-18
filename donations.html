@@ -1,0 +1,304 @@
+
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Zeno</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <style>
+        :root {
+
+            --theme-primary: #F5AB19;
+            --theme-secondary: #212124;
+
+            --theme-light-primary: #fca801;
+            --theme-light-secondary: #101011;
+
+            --color-light-gray: #F3F3F3;
+            --color-medium-gray: #E6E6E6;
+            --color-gray: #6A6A6C;
+            --color-dark-gray: #1D1D1F;
+            --color-white: #FFFFFF;
+            --color-white-transparent: rgba(255, 255, 255, 0.6);
+
+            --gap-xs-desktop: 20px;
+            --gap-md-desktop: 30px;
+            --gap-xl-desktop: 40px;
+
+        }
+    </style>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+<div class="navigation-mobile">
+    <div class="container">
+        <div class="navigation-mobile-top">
+            <ul class="navigation-mobile-top-list">
+                <li><a href="#">Create station</a> or <a href="#">Podcasts</a></li>
+                <li><a href="#">Discovery</a></li>
+            </ul>
+        </div>
+        <div class="navigation-mobile-bottom">
+            <ul class="navigation-mobile-bottom-list">
+                <li><a href="#">Log in<svg width="41" height="22" viewBox="0 0 41 22" xmlns="http://www.w3.org/2000/svg"><path class="animate-fill" d="M40.581 10.186l-14-10A1 1 0 0025 1v8H1a1 1 0 00-1 1v2a1 1 0 001 1h24v8a1 1 0 001.581.814l14-10a1 1 0 000-1.628z" fill="#FFF" fill-rule="nonzero"/></svg></a></li>
+                <li><a href="#">Sign up as a broadcaster<svg width="41" height="22" viewBox="0 0 41 22" xmlns="http://www.w3.org/2000/svg"><path class="animate-fill" d="M40.581 10.186l-14-10A1 1 0 0025 1v8H1a1 1 0 00-1 1v2a1 1 0 001 1h24v8a1 1 0 001.581.814l14-10a1 1 0 000-1.628z" fill="#FFF" fill-rule="nonzero"/></svg></a></li>
+                <li><a href="#">Sign up as a listener<svg width="41" height="22" viewBox="0 0 41 22" xmlns="http://www.w3.org/2000/svg"><path class="animate-fill" d="M40.581 10.186l-14-10A1 1 0 0025 1v8H1a1 1 0 00-1 1v2a1 1 0 001 1h24v8a1 1 0 001.581.814l14-10a1 1 0 000-1.628z" fill="#FFF" fill-rule="nonzero"/></svg></a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- /.container -->
+</div>
+<!-- /.navigation-mobile -->
+<header class="header-global">
+    <div class="container flex flex-align">
+        <div class="header-logo">
+            <div class="logo">
+                <a href="#">
+                    <svg width="68" height="16" viewBox="0 0 68 16" xmlns="http://www.w3.org/2000/svg"><title>Group</title><g class="animate-fill" fill="#FEFEFE" fill-rule="evenodd"><path d="M50.653 2.073A1.845 1.845 0 1 0 48.35 3.86v9.049L36.415.972v11.252a1.845 1.845 0 1 0 .912 0V3.175l11.936 11.936V3.86a1.845 1.845 0 0 0 1.39-1.787M13.782 11.936c-.862 0-1.583.591-1.786 1.39h-9.05L14.883 1.388H3.63a1.845 1.845 0 1 0 0 .912h9.05L.743 14.238h11.252a1.844 1.844 0 1 0 1.786-2.302M60.454 14.815a6.78 6.78 0 0 1-6.773-6.774 6.78 6.78 0 0 1 6.773-6.772 6.78 6.78 0 0 1 6.773 6.772 6.78 6.78 0 0 1-6.773 6.774m0-12.393a5.626 5.626 0 0 0-5.62 5.62 5.626 5.626 0 0 0 5.62 5.62 5.626 5.626 0 0 0 5.62-5.62 5.626 5.626 0 0 0-5.62-5.62M19.952 14.238h11.275v-.942H19.952v.942zm0-11.907h11.275v-.942H19.952v.942zm0 5.954h11.275v-.942H19.952v.942z"/></g></svg>                </a>
+            </div>
+        </div>
+        <button class="navigation-toggle">
+            <span class="navigation-toggle-icon"></span>
+            Menu
+        </button>
+        <div class="header-navigation">
+            <ul class="header-menu">
+                <li class="header-menu-station"><a href="#"><span class="icon-create"></span>Create Station</a></li>
+                <li class="header-menu-or">or</li>
+                <li class="header-menu-podcasts"><a href="#">Podcasts</a></li>
+                <li class="header-menu-discovery"><a href="#">Discovery</a></li>
+            </ul>
+        </div>
+        <div class="header-sidebar flex flex-align">
+            <div class="header-sidebar-item">
+                <a class="button button-transparent" href="#">
+                    <div class="button-icon">
+                        <svg width="14" height="16" viewBox="0 0 14 16" xmlns="http://www.w3.org/2000/svg"><path d="M11.311 9.527c-1.161-.393-1.85-.825-2.143-1.175A3.991 3.991 0 0011 5V4c0-2.206-1.794-4-4-4S3 1.794 3 4v1c0 1.406.732 2.639 1.832 3.352-.292.35-.981.782-2.142 1.175A3.942 3.942 0 000 13.26V16h14v-2.74c0-1.69-1.081-3.19-2.689-3.733zM5 4c0-1.103.897-2 2-2s2 .897 2 2v1c0 1.103-.897 2-2 2s-2-.897-2-2V4zm7 10H2v-.74c0-.831.534-1.569 1.33-1.838 1.845-.624 3-1.436 3.452-2.422h.436c.452.986 1.607 1.798 3.453 2.422A1.943 1.943 0 0112 13.26V14z" fill="#FFF" class="animate-fill" fill-rule="nonzero"/></svg>                    </div>
+                    Log in
+                </a>
+            </div>
+            <div class="header-sidebar-item">
+                <a class="button button-white button-sign-up" href="#">Sign up</a>
+            </div>
+        </div>
+    </div>
+    <div class="sign-up-navigation">
+        <div class="container-fixed">
+            <ul class="sign-up-menu">
+                <li><a href="#">Sign up as a broadcaster<svg width="41" height="22" viewBox="0 0 41 22" xmlns="http://www.w3.org/2000/svg"><path class="animate-fill" d="M40.581 10.186l-14-10A1 1 0 0025 1v8H1a1 1 0 00-1 1v2a1 1 0 001 1h24v8a1 1 0 001.581.814l14-10a1 1 0 000-1.628z" fill="#FFF" fill-rule="nonzero"/></svg></a></li>
+                <li><a href="#">Sign up as a listener<svg width="41" height="22" viewBox="0 0 41 22" xmlns="http://www.w3.org/2000/svg"><path class="animate-fill" d="M40.581 10.186l-14-10A1 1 0 0025 1v8H1a1 1 0 00-1 1v2a1 1 0 001 1h24v8a1 1 0 001.581.814l14-10a1 1 0 000-1.628z" fill="#FFF" fill-rule="nonzero"/></svg></a></li>
+            </ul>
+        </div>
+        <!-- /.container-fixed -->
+    </div>
+    <!-- /.sign-up-navigation -->
+</header>
+<div class="header-push"></div>
+
+
+<div class="hero hero-v3 flex flex-align flex-wrap">
+    <div class="hero-image" style="background-image: url('images/upload/hero5.jpg');"></div>
+    <div class="hero-content">
+        <div class="hero-content-inner">
+            <h1>Meet our digital services</h1>
+            <p>Let’s join us and explore the benefits of Zeno&nbsp;Network.</p>
+            <a href="#" class="button button-big">Get started now</a>
+        </div>
+    </div>
+</div>
+<!-- /.hero -->
+<div class="lead lead-v4">
+    <div class="container-fixed">
+        <div class="lead-content">
+            <div class="lead-title">
+                <h2>Empowering broadcasters and minority diaspora audiences all over the world</h2>
+            </div>
+            <p>Over the past decade, Zeno Media has established itself as one of the largest streaming companies in the world with millions of listeners tuning in daily across 25,000+ stations.</p>
+            <a href="#" class="button button-big">Create a station</a>
+        </div>
+        <!-- /.lead-content -->
+    </div>
+    <!-- /.container-fixed -->
+</div>
+<!-- /.lead --><div class="content-columns content-columns-inverse">
+    <div class="container-fixed flex flex-wrap flex-align">
+        <div class="content-columns-photo">
+            <img src="images/upload/image-8.png" alt="">
+        </div>
+        <div class="content-columns-content">
+            <p>Etiam ultricies ante in metus vehicula, id fermentum ex egestas. Suspendisse laoreet felis nec consectetur laoreet.</p>
+        </div>
+    </div>
+    <!-- /.container-fixed -->
+</div>
+<!-- /.content-columns --><div class="how-it-works">
+    <div class="container-fixed">
+        <div class="how-it-works-caption">
+            <div class="how-it-works-title">
+                <h2>How it works</h2>
+            </div>
+            <p>Quisque sollicitudin efficitur diam, id aliquet arcu tempor ac. <br>Praesent ultrices vehicula quam, et ultricies.</p>
+        </div>
+        <!-- /.how-it-works-caption -->
+        <div class="how-it-works-list flex flex-wrap">
+            <div class="how-it-works-item">
+                <div class="how-it-works-item-icon"><img src="images/svg/icon25.svg" alt=""></div>
+                <div class="how-it-works-item-title">
+                    <h5>Create an account</h5>
+                </div>
+                <p>Etiam ultricies ante in metus vehicula, id fermentum ex egestas.</p>
+            </div>
+            <!-- /.how-it-works-item -->
+            <div class="how-it-works-item">
+                <div class="how-it-works-item-icon"><img src="images/svg/icon26.svg" alt=""></div>
+                <div class="how-it-works-item-title">
+                    <h5>Setup your station</h5>
+                </div>
+                <p>Etiam ultricies ante in metus vehicula, id fermentum ex egestas.</p>
+            </div>
+            <!-- /.how-it-works-item -->
+            <div class="how-it-works-item">
+                <div class="how-it-works-item-icon"><img src="images/svg/icon27.svg" alt=""></div>
+                <div class="how-it-works-item-title">
+                    <h5>Enter your dashboard</h5>
+                </div>
+                <p>Etiam ultricies ante in metus vehicula, id fermentum ex egestas.</p>
+            </div>
+            <!-- /.how-it-works-item -->
+            <div class="how-it-works-item">
+                <div class="how-it-works-item-icon"><img src="images/svg/icon28.svg" alt=""></div>
+                <div class="how-it-works-item-title">
+                    <h5>Create a community</h5>
+                </div>
+                <p>Etiam ultricies ante in metus vehicula, id fermentum ex egestas.</p>
+            </div>
+            <!-- /.how-it-works-item -->
+        </div>
+        <!-- /.how-it-works-list -->
+    </div>
+    <!-- /.container-fixed -->
+</div>
+<!-- /.how-it-works --><div class="advantages">
+    <div class="container-fixed">
+        <div class="advantages-caption">
+            <div class="advantages-title">
+                <h2>Zeno is so much more than just radio</h2>
+            </div>
+            <p>Donec gravida, nibh sed vehicula gravida, elit dolor luctus dolor, in malesuada augue massa quis odio.</p>
+        </div>
+        <!-- /.advantages-caption -->
+        <div class="advantages-list flex flex-wrap">
+            <div class="advantages-item">
+                <div class="advantages-item-icon"><img src="images/svg/icon22.svg" alt=""></div>
+                <div class="advantages-item-title">
+                    <h4>Long distance calling</h4>
+                </div>
+                <p>Donec gravida, nibh sed vehicula gravida, elit dolor luctus dolor, in malesuada augue massa quis odio.</p>
+            </div>
+            <!-- /.advantages-item -->
+            <div class="advantages-item">
+                <div class="advantages-item-icon"><img src="images/svg/icon23.svg" alt=""></div>
+                <div class="advantages-item-title">
+                    <h4>Top up</h4>
+                </div>
+                <p>Donec gravida, nibh sed vehicula gravida, elit dolor luctus dolor, in malesuada augue massa quis odio.</p>
+            </div>
+            <!-- /.advantages-item -->
+            <div class="advantages-item">
+                <div class="advantages-item-icon"><img src="images/svg/icon24.svg" alt=""></div>
+                <div class="advantages-item-title">
+                    <h4>Money transfer</h4>
+                </div>
+                <p>Donec gravida, nibh sed vehicula gravida, elit dolor luctus dolor, in malesuada augue massa quis odio.</p>
+            </div>
+            <!-- /.advantages-item -->
+        </div>
+        <!-- /.advantages-list -->
+    </div>
+    <!-- /.container-fixed -->
+</div>
+<!-- /.advantages --><div class="quote">
+    <div class="container-fixed">
+        <div class="quote-content">
+            <blockquote>
+                <p>Nam luctus consequat tincidunt. Pellentesque sem nisi, aliquam quis turpis in, lobortis suscipit ex. Fusce sit amet iaculis enim.</p>
+            </blockquote>
+        </div>
+    </div>
+    <!-- /.container-fixed -->
+</div>
+<!-- /.quote -->    <footer class="footer-global">
+        <div class="container container-fixed flex flex-wrap">
+            <div class="footer-column">
+                <h6>Creators</h6>
+                <ul>
+                    <li><a href="#">Radio</a></li>
+                    <li><a href="#">Podcast</a></li>
+                    <li><a href="#">Video</a></li>
+                    <li><a href="#">Donations</a></li>
+                    <li><a href="#">CTL</a></li>
+                    <li><a href="#">Prayer Lines</a></li>
+                    <li><a href="#">Merch</a></li>
+                    <li><a href="#">Landing page</a></li>
+                    <li><a href="#">Widget</a></li>
+                </ul>
+            </div>
+            <!-- /.footer-column -->
+            <div class="footer-column">
+                <h6>Community</h6>
+                <ul>
+                    <li><a href="#">Long distance calling</a></li>
+                    <li><a href="#">Top up</a></li>
+                    <li><a href="#">Money transfer</a></li>
+                </ul>
+            </div>
+            <!-- /.footer-column -->
+            <div class="footer-column">
+                <h6>Apps</h6>
+                <ul>
+                    <li><a href="#">Zeno Radio</a></li>
+                    <li><a href="#">Zeno+</a></li>
+                    <li><a href="#">Network</a></li>
+                </ul>
+            </div>
+            <!-- /.footer-column -->
+            <div class="footer-column">
+                <h6>About us</h6>
+                <ul>
+                    <li><a href="#">What we do</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <!-- /.footer-column -->
+        </div>
+        <!-- /.container -->
+        <div class="container container-fixed flex flex-wrap">
+            <div class="footer-line"></div>
+            <div class="footer-copyright">
+                <p>&copy; 2020 Zeno FM</p>
+            </div>
+            <div class="footer-navigation">
+                <ul class="flex">
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Cookies</a></li>
+                    <li><a href="#">GDPR</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- /.container -->
+    </footer>
+    <script src="js/jquery.js"></script>
+    <script src="js/migrate.js"></script>
+    <script src="js/library.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

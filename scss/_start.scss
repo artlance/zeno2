@@ -1,0 +1,121 @@
+.start {
+    padding-top: 30px;
+    padding-bottom: 80px;
+    .container-fixed {
+        max-width: 1250px;
+    }
+    &-photo {
+        flex: 0 0 50%;
+        max-width: 50%;
+        padding-right: 30px;
+        padding-left: 0;
+        margin-left: -18px;
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+    }
+    &-content {
+        padding-left: 33px;
+        flex: 0 0 50%;
+        max-width: 50%;
+        color: #414145;
+        font-size: 16px;
+        line-height: 1.67;
+        h1, h2, h3, h4 {
+            font-weight: bold;
+            font-size: 36px;
+            line-height: 1.2;
+            color: var(--theme-secondary);
+            max-width: 470px;
+            margin-bottom: 26px;
+        }
+        p {
+            margin-bottom: 20px;
+        }
+    }
+    &-tabs {
+        margin-top: 31px;
+        margin-bottom: 23px;
+        li {
+            font-size: 16px;
+            font-weight: 500;
+            padding: 3px 8px 1px;
+            cursor: pointer;
+            border: 1px solid var(--theme-secondary);
+            &.active {
+                background-color: var(--theme-secondary);
+                color: var(--color-white);
+            }
+            &:first-child {
+                border-radius: 4px 0 0 4px;
+            }
+            &:last-child {
+                border-radius: 0 4px 4px 0;
+            }
+        }
+    }
+    .box {
+        font-size: 16px;
+        line-height: 1.5;
+        h5 {
+            font-size: 18px;
+            font-weight: 500;
+            margin-bottom: 8px;
+            color: var(--theme-secondary);
+        }
+        p {
+            margin-bottom: 30px;
+        }
+    }
+    &-group {
+        padding-left: 43px;
+        position: relative;
+        &-icon {
+            position: absolute;
+            left: 3px;
+            top: 4px;
+            width: 24px;
+            height: 24px;
+            svg {
+                width: 24px;
+            }
+        }
+    }
+}
+@media (max-width: 992px) {
+    .start {
+        padding-bottom: 48px;
+        &-photo {
+            flex: 0 0 100%;
+            max-width: 100%;
+            margin-left: 0;
+            padding-right: 0;
+            margin-bottom: 13px;
+        }
+        &-content {
+            padding-left: 0;
+            flex: 0 0 100%;
+            max-width: 100%;
+            font-size: 16px;
+            line-height: 1.5;
+            h1, h2, h3, h4 {
+                font-size: 28px;
+                line-height: 1.28;
+                margin-bottom: 15px;
+            }
+            .button {
+                width: 100%;
+                max-width: 335px;
+                text-align: center;
+            }
+            p {
+                margin-bottom: 15px;
+            }
+        }
+        &-tabs {
+            margin-top: 15px;
+        }
+    }
+}

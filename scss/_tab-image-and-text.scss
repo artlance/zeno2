@@ -1,0 +1,105 @@
+.tab-text-and-image {
+    margin: 40px 0 80px;
+    .container {
+        max-width: 1320px;
+        margin: 0 auto;
+    }
+    .tab-columns {
+        display: flex;
+        align-items: center;
+    }
+    .tab-column-image {
+        flex: 0 0 50%;
+        max-width: 50%;
+        min-height: 1px;
+        padding-right: 10px;
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+            background: #E6EEF3;
+            border: 4px solid #FFFFFF;
+            box-shadow: 0 2px 20px 0 rgba(40,40,42,0.12);
+        }
+    }
+    .tab-column-text {
+        padding-left: 80px;
+        flex: 0 0 50%;
+        max-width: 50%;
+        min-height: 1px;
+    }
+    .accordion-item-content {
+        display: none;
+        font-size: 18px;
+        line-height: 1.667;
+        color: var(--color-gray);
+        padding-top: 10px;
+    }
+    .accordion {
+        padding: 20px 0;
+        border-left: 1px solid rgba(#212124, 0.1);
+    }
+    .accordion-title {
+        padding: 9px 0 9px 29px;
+        font-size: 24px;
+        line-height: 1.25;
+        font-weight: 500;
+        position: relative;
+        display: block;
+        color: var(--color-gray);
+        &:before {
+            content: "";
+            position: absolute;
+            left: -1px;
+            top: 0;
+            bottom: 0;
+            background: #F5AB19;
+            width: 4px;
+            display: none;
+        }
+    }
+    .accordion-item {
+        padding: 20px 0;
+        max-width: 400px;
+        &.active {
+            .accordion-title {
+                font-weight: bold;
+                color: var(--theme-secondary);
+                &:before {
+                    display: block;
+                }
+            }
+            .accordion-item-content {
+                padding-left: 29px;
+                display: block;
+            }
+        }
+    }
+}
+@media (max-width: 992px) {
+    .tab-text-and-image {
+        margin-bottom: 40px;
+        .tab-column-image {
+            margin-bottom: 20px;
+        }
+        .tab-column-text,
+        .tab-column-image {
+            flex: 0 0 100%;
+            max-width: 100%;
+            padding-left: 0;
+            padding-right: 0;
+        }
+        .accordion-title {
+            font-size: 20px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+        }
+        .accordion-item-content {
+            font-size: 16px;
+        }
+        .accordion-item {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+    }
+}

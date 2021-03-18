@@ -1,0 +1,44 @@
+// --theme-primary: #F5AB19;
+// --theme-secondary: #212124;
+
+// --theme-light-primary: #fca801;
+// --theme-light-secondary: #101011;
+
+// --color-light-gray: #F3F3F3;
+// --color-medium-gray: #E6E6E6;
+// --color-gray: #6A6A6C;
+// --color-dark-gray: #1D1D1F;
+// --color-white: #FFFFFF;
+// --color-white-transparent: rgba(255, 255, 255, 0.6);
+
+// --gap-xs-desktop: 20px;
+// --gap-md-desktop: 30px;
+// --gap-xl-desktop: 40px;
+
+
+$footer: 100px;
+
+$fontSize: 16px;
+$lineHeight: 1.5;
+$fontFamily: 'Larsseit', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+$primary: var(--theme-primary);
+$secondary: var(--theme-secondary);
+
+$light-gray: var(--color-light-gray);
+$gray: var(--color-gray);
+$dark-gray: var(--color-dark-gray);
+
+$white: #ffffff;
+$text: #000000;
+
+$gap-xs-mobile: var(--gap-xs-mobile);
+$gap-md-mobile: var(--gap-md-mobile);
+$gap-xl-mobile: var(--gap-xl-mobile);
+
+$gap-xs-desktop: var(--gap-xs-desktop);
+$gap-md-desktop: var(--gap-md-desktop);
+$gap-xl-desktop: var(--gap-xl-desktop);
+
+$duration: 0.22s; $d: $duration;
+$function: cubic-bezier(0.4, 0.0, 0.2, 1); $f: $function;

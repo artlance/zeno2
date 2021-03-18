@@ -1,0 +1,110 @@
+.create-station {
+    margin: 80px 0;
+    &-caption {
+        padding: 0 40px 4px;
+        font-size: 18px;
+        line-height: 1.667;
+        color: var(--theme-secondary);
+        p {
+            margin-bottom: 20px;
+        }
+        h2, h3, h4 {
+            font-size: 36px;
+            line-height: 1.2;
+            font-weight: bold;
+            margin-bottom: 22px;
+        }
+    }
+    &-content {}
+    &-column {
+        flex: 0 0 50%;
+        max-width: 50%;
+        padding: 20px 40px;
+    }
+    &-item {
+        padding: 32px 32px 27px;
+        border-radius: 8px;
+        background: $white;
+        box-shadow: 0 2px 16px 0 rgba(40, 40, 42, 0.07);
+    }
+    &-icon {
+        min-height: 40px;
+        margin-bottom: 15px;
+        img {
+            display: block;
+        }
+    }
+    &-title {
+        font-size: 24px;
+        line-height: 1.334;
+        font-weight: bold;
+        color: var(--theme-secondary);
+        margin-bottom: 16px;
+        h3 {
+            font-size: 100%;
+            font-weight: bold;
+        }
+    }
+    &-info {
+        font-size: 18px;
+        line-height: 1.667;
+        color: var(--color-gray);
+        p {
+            margin-bottom: 20px;
+        }
+    }
+    &-link {
+        font-weight: bold;
+        a {
+            display: inline-block;
+            vertical-align: top;
+            position: relative;
+            padding: 3px 13px 3px 0;
+            color: var(--theme-primary);
+            svg {
+                position: absolute;
+                top: 50%;
+                right: 0;
+                width: 6px;
+                height: 10px;
+                margin-top: -5px;
+            }
+        }
+    }
+}
+@media (max-width: 992px) {
+    .create-station {
+        margin: 0 0 40px;
+        &-caption {
+            padding-left: 0;
+            padding-right: 0;
+            font-size: 16px;
+            line-height: 1.5;
+            h2, h3, h4 {
+                font-size: 28px;
+                line-height: 1.286;
+                margin-bottom: 12px;
+            }
+        }
+        &-column {
+            flex: 0 0 100%;
+            max-width: 100%;
+            padding: 0 0 20px;
+        }
+        &-item {
+            padding: 20px;
+        }
+        &-icon {
+            margin-bottom: 10px;
+        }
+        &-title {
+            font-size: 20px;
+            line-height: 1.4;
+            margin-bottom: 11px;
+        }
+        &-info {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+    }
+}

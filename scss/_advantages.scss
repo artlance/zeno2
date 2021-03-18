@@ -1,0 +1,105 @@
+.advantages {
+    margin: 80px 0;
+    padding: 80px 0 40px;
+    text-align: center;
+    color: var(--theme-secondary);
+    background: var(--color-light-gray);
+    &-v2 {
+        margin-top: 0;
+    }
+    &-v3 {
+        background: rgba(#F3F3F3, 0.6);
+    }
+    .container-fixed {
+        max-width: 1210px;
+    }
+    &-caption {
+        max-width: 700px;
+        margin: 0 auto 55px;
+        font-size: 18px;
+        line-height: 1.667;
+        p {
+            color: #414145;
+            margin-bottom: 20px;
+        }
+    }
+    &-title {
+        font-size: 36px;
+        line-height: 1.2;
+        font-weight: bold;
+        margin-bottom: 22px;
+        h2, h3, h4 {
+            font-size: 100%;
+            font-weight: bold;
+        }
+    }
+    &-list {
+        margin: 0 -35px;
+    }
+    &-item {
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%;
+        padding: 0 35px 40px;
+        p {
+            color: #414145;
+        }
+        &-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 64px;
+            height: 64px;
+            margin: 0 auto 24px;
+            background: var(--theme-primary);
+            border-radius: 50%;
+            img {
+                display: block;
+            }
+        }
+        &-title {
+            font-size: 22px;
+            line-height: 1.364;
+            font-weight: bold;
+            margin-bottom: 13px;
+            h3, h4, h5 {
+                font-size: 100%;
+                font-weight: bold;
+            }
+        }
+    }
+}
+@media (max-width: 992px) {
+    .advantages {
+        margin: 40px 0;
+        padding: 40px 0 20px;
+        &-v2 {
+            margin-top: 0;
+        }
+        &-caption {
+            max-width: none;
+            margin: 0 0 20px;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        &-title {
+            font-size: 28px;
+            line-height: 1.286;
+            margin-bottom: 12px;
+        }
+        &-list {
+            margin: 0;
+        }
+        &-item {
+            flex: 0 0 100%;
+            max-width: 100%;
+            padding: 0 0 20px;
+            &-icon {
+                margin-bottom: 12px;
+            }
+            &-title {
+                font-size: 20px;
+                line-height: 1.4;
+            }
+        }
+    }
+}

@@ -1,0 +1,96 @@
+.lead {
+    margin: 80px 0;
+    padding: 80px 0;
+    background: var(--theme-primary);
+    &-v2,
+    &-v4 {
+        padding-top: 0;
+        padding-bottom: 0;
+        background: var(--color-white);
+    }
+    &-v3 {
+        margin-top: 0;
+    }
+    &-v5 {
+        background: transparent;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            left: 0;
+            top: -80px;
+            width: 712px;
+            height: 936px;
+            background: transparent url('../images/upload/bg.png') 0 0 no-repeat;
+            background-size: 100% 100%;
+        }
+    }
+    &-content {
+        padding: 0 40px;
+        font-size: 20px;
+        line-height: 1.667;
+        color: var(--theme-secondary);
+        p {
+            margin-bottom: 20px;
+        }
+    }
+    &-title {
+        font-size: 56px;
+        line-height: 1.18;
+        font-weight: bold;
+        margin-bottom: 22px;
+        h1, h2, h3 {
+            font-size: 100%;
+            font-weight: bold;
+        }
+    }
+    &-image {
+        max-width: 80px;
+        margin-bottom: 20px;
+    }
+    & + .footer-global {
+        margin-top: -80px;
+    }
+}
+@media (max-width: 992px) {
+    .lead {
+        margin: 40px 0;
+        padding: 40px 0;
+        &-v2,
+        &-v4 {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+        &-v3,
+        &-v4 {
+            margin-top: 0;
+        }
+        &-v5 {
+            padding-top: 0;
+            padding-bottom: 0;
+            &::before {
+                top: -40px;
+                width: 356px;
+                height: 468px;
+            }
+        }
+        &-content {
+            padding: 0;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        &-title {
+            font-size: 32px;
+            line-height: 1.23;
+            margin-bottom: 12px;
+        }
+        &-image {
+            max-width: 44px;
+            margin-bottom: 10px;
+        }
+        & + .footer-global {
+            margin-top: -40px;
+        }
+    }
+}

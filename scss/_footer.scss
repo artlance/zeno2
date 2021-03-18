@@ -1,0 +1,96 @@
+.footer {
+    &-global {
+        padding: 54px 0 14px;
+        background: var(--color-light-gray);
+        a {
+            color: var(--theme-secondary);
+            &:hover {
+                color: var(--theme-primary);
+            }
+        }
+    }
+    &-column {
+        padding-left: 64px;
+        padding-bottom: 38px;
+        &:first-child {
+            padding-left: 0;
+        }
+        h6 {
+            font-size: 14px;
+            color: #6A6A6C;
+            margin: 0 0 16px;
+        }
+        ul {
+            li {
+                margin-bottom: 8px;
+            }
+        }
+    }
+    &-copyright {
+        font-size: 14px;
+        flex: 0 0 40%;
+        max-width: 40%;
+        color: #6A6A6C;
+    }
+    &-navigation {
+        font-size: 14px;
+        flex: 0 0 60%;
+        max-width: 60%;
+        ul {
+            justify-content: flex-end;
+            li {
+                margin-left: 24px;
+            }
+        }
+        a {
+            color: #6A6A6C;
+            &:hover {
+                color: var(--theme-primary);
+            }
+        }
+    }
+    &-line {
+        flex: 0 0 100%;
+        max-width: 100%;
+        height: 1px;
+        background: var(--color-medium-gray);
+        margin-bottom: 15px;
+    }
+}
+@media (max-width: 992px) {
+    .footer {
+        &-global {
+            padding-top: 29px;
+            padding-bottom: 20px;
+            text-align: center;
+        }
+        &-column {
+            flex: 0 0 50%;
+            max-width: 50%;
+            padding-left: 0;
+            padding-bottom: 20px;
+            h6 {
+                margin-bottom: 8px;
+            }
+        }
+        &-copyright {
+            flex: 0 0 100%;
+            max-width: 100%;
+            padding-bottom: 9px;
+        }
+        &-navigation {
+            flex: 0 0 100%;
+            max-width: 100%;
+            ul {
+                justify-content: center;
+                li {
+                    margin-left: 12px;
+                    margin-right: 12px;
+                }
+            }
+        }
+        &-line {
+            margin-bottom: 24px;
+        }
+    }
+}

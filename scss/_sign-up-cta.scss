@@ -1,0 +1,24 @@
+.sign-up-cta {
+    &-link {
+        display: block;
+        padding: 40px;
+        font-size: 36px;
+        line-height: 1.2;
+        font-weight: bold;
+        text-align: center;
+        color: var(--color-white);
+        background: var(--color-gray);
+        &:hover {
+            background-color: var(--theme-secondary);
+        }
+    }
+}
+@media (max-width: 992px) {
+    .sign-up-cta {
+        &-link {
+            padding: 20px;
+            font-size: 28px;
+            line-height: 1.286;
+        }
+    }
+}

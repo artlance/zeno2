@@ -1,0 +1,77 @@
+.download {
+    background: var(--theme-primary);
+    &-v2 {
+        background: #4AABDB;
+    }
+    .container-fixed {
+        min-height: 316px;
+    }
+    &-content {
+        flex: 0 0 100%;
+        max-width: 100%;
+        text-align: center;
+        padding: 40px 0;
+        color: var(--theme-secondary);
+    }
+    &-title {
+        font-size: 56px;
+        line-height: 1.18;
+        font-weight: bold;
+        margin-bottom: 40px;
+        h2, h3, h4 {
+            font-size: 100%;
+            font-weight: bold;
+        }
+    }
+    &-tags {
+        margin: -25px -10px 10px;
+        justify-content: space-evenly;
+    }
+    &-tag {
+        padding: 0 10px 10px;
+        font-size: 30px;
+        line-height: 1.2;
+        font-weight: bold;
+        a {
+            color: var(--theme-secondary);
+        }
+    }
+    &-buttons {
+        margin: 0 -40px -40px;
+    }
+    &-button {
+        padding: 0 40px 40px;
+    }
+}
+.community + .download {
+    margin-top: -80px;
+}
+@media (max-width: 992px) {
+    .download {
+        .container-fixed {
+            min-height: 0;
+        }
+        &-title {
+            font-size: 32px;
+            line-height: 1.23;
+        }
+        &-tags {
+            margin-top: -20px;
+            margin-bottom: 20px;
+            justify-content: center;
+        }
+        &-tag {
+            font-size: 18px;
+        }
+        &-buttons {
+           margin: 0 -20px -20px;
+        }
+        &-button {
+            min-width: 264px;
+            padding: 0 20px 20px;
+        }
+    }
+    .community + .download {
+        margin-top: -40px;
+    }
+}

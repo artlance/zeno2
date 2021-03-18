@@ -1,0 +1,182 @@
+.powerful-features {
+    margin: 80px 0;
+    overflow: hidden;
+    &-content {
+        margin: 0 40px;
+        padding-bottom: 80px;
+        border-bottom: 1px solid rgba(#212124, 0.1);
+    }
+    &-caption {
+        max-width: 700px;
+        margin: 0 auto 36px;
+        text-align: center;
+        font-size: 18px;
+        line-height: 1.667;
+        color: var(--theme-secondary);
+        p {
+            margin-bottom: 20px;
+        }
+        &-big {
+            max-width: 780px;
+            font-size: 20px;
+            .powerful-features-title {
+                font-size: 56px;
+                line-height: 1.18;
+            }
+        }
+    }
+    &-title {
+        font-size: 36px;
+        line-height: 1.2;
+        font-weight: bold;
+        margin-bottom: 22px;
+        h2, h3, h4 {
+            font-size: 100%;
+            font-weight: bold;
+        }
+    }
+    &-tabs {
+        margin-bottom: 36px;
+        li {
+            font-size: 16px;
+            font-weight: 500;
+            padding: 3px 8px 1px;
+            cursor: pointer;
+            border: 1px solid var(--theme-secondary);
+            &.active {
+                background-color: var(--theme-secondary);
+                color: var(--color-white);
+            }
+            &:first-child {
+                border-radius: 4px 0 0 4px;
+            }
+            &:last-child {
+                border-radius: 0 4px 4px 0;
+            }
+        }
+    }
+    &-list-wrapper {
+        position: relative;
+        height: 152px;
+    }
+    &-list {
+        position: absolute;
+        left: 0;
+        top: 0;
+        font-size: 0;
+        line-height: 0;
+        white-space: nowrap;
+        &2 {
+            left: auto;
+            top: auto;
+            right: 30%;
+            bottom: 0;
+            .powerful-features-item {
+                margin-right: 0;
+                margin-left: 24px;
+            }
+        }
+    }
+    &-item {
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 24px;
+        position: relative;
+        padding: 17px 32px 15px 68px;
+        height: 64px;
+        background-color: var(--theme-secondary);
+        border-radius: 32px;
+        &-v2 {
+            padding-right: 22px;
+            padding-left: 22px;
+        }
+    }
+    &-icon {
+        position: absolute;
+        left: 32px;
+        top: 50%;
+        width: 28px;
+        transform: translateY(-50%);
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    &-category {
+        font-size: 24px;
+        line-height: 1.334;
+        color: var(--color-white);
+    }
+    &-v2 {
+        .powerful-features-content {
+            padding-bottom: 0;
+            border-bottom: 0;
+        }
+    }
+}
+@media (max-width: 992px) {
+    .powerful-features {
+        margin: 40px 0;
+        overflow: visible;
+        &-content {
+            margin: 0;
+            padding-bottom: 20px;
+        }
+        &-caption {
+            max-width: none;
+            margin: 0 0 20px;
+            text-align: left;
+            font-size: 16px;
+            line-height: 1.5;
+            &-big {
+                .powerful-features-title {
+                    font-size: 32px;
+                    line-height: 1.23;
+                }
+            }
+        }
+        &-title {
+            font-size: 28px;
+            line-height: 1.286;
+            margin-bottom: 12px;
+        }
+        &-tabs {
+            margin-bottom: 20px;
+            justify-content: flex-start;
+        }
+        &-list-wrapper {
+            position: static;
+            height: auto;
+        }
+        &-list {
+            position: static;
+            white-space: normal;
+            &2 {
+                .powerful-features-item {
+                    margin-left: 0;
+                }
+            }
+        }
+        &-item {
+            display: block;
+            margin-right: 0;
+            margin-bottom: 20px;
+            padding: 4px 0 0 36px;
+            height: auto;
+            background-color: transparent;
+            border-radius: 0;
+            &-v2 {
+                padding-right: 0;
+                padding-left: 0;
+            }
+        }
+        &-icon {
+            left: 0;
+        }
+        &-category {
+            font-size: 20px;
+            line-height: 1.4;
+            color: var(--theme-secondary);
+        }
+    }
+}

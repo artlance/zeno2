@@ -1,0 +1,191 @@
+.getapp {
+    position: relative;
+    .container-fixed {
+        position: relative;
+        max-width: 1330px;
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+    &-button {
+        height: 58px;
+        display: block;
+        background: var(--theme-secondary);
+        color: var(--color-white);
+        border-radius: 4px;
+        font-weight: 500;
+        padding-left: 48px;
+        padding-right: 14px;
+        padding-top: 10px;
+        position: relative;
+        text-align: left;
+        &-icon {
+            position: absolute;
+            left: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            svg {
+                display: block;
+            }
+        }
+        &-suptitle {
+            display: block;
+            font-size: 12px;
+            opacity: 0.5;
+        }
+        &-title {
+            display: block;
+            font-size: 14px;
+        }
+        &:hover {
+            color: var(--color-white) !important;
+            background-color: var(--theme-light-secondary) !important;
+            border-color: var(--theme-light-secondary) !important;
+        }
+        &-big {
+            height: 90px;
+            border-radius: 6px;
+            padding-left: 76px;
+            padding-right: 20px;
+            padding-top: 16px;
+            .getapp-button-icon {
+                left: 25px;
+                transform: translateY(-50%) scale(1.5);
+                margin-top: -2px;
+            }
+            .getapp-button-suptitle {
+                font-size: 18px;
+            }
+            .getapp-button-title {
+                font-size: 21px;
+            }
+        }
+    }
+    &-content {
+        flex: 0 0 60%;
+        max-width: 60%;
+        font-size: 16px;
+        padding-right: 20px;
+        h2 {
+            margin: 0 0 19px;
+            font-weight: bold;
+            font-size: 36px;
+            line-height: 1.25;
+        }
+        p {
+            margin: 19px 0 0;
+        }
+    }
+    &-image {
+        flex: 0 0 40%;
+        max-width: 40%;
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+    }
+    &-background {
+        background: var(--color-light-gray);
+        position: absolute;
+        left: 40px;
+        right: 40px;
+        top: 12%;
+        bottom: 14%;
+        border-radius: 8px;
+    }
+    &-columns {
+        margin: 0 -12px 14px;
+    }
+    &-column {
+        margin-top: 34px;
+        padding: 0 12px;
+        &-title {
+            color: #6A6A6C;
+            font-size: 12px;
+            font-weight: 500;
+            margin-bottom: 7px;
+        }
+        &-list {
+            margin: 0 -6px;
+            list-style: none;
+            li {
+                padding: 0 6px;
+            }
+        }
+    }
+    &-plus {
+        .getapp-background {
+            background: var(--theme-primary);
+        }
+        .getapp-content {
+            font-size: 20px;
+            h2 {
+                font-size: 72px;
+            }
+        }
+    }
+}
+@media (max-width: 1240px) {
+    .getapp {
+        &-content {
+            flex: 0 0 50%;
+            max-width: 50%;
+            h2 {
+                font-size: 32px;
+            }
+        }
+        &-image {
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+    }
+}
+@media (max-width: 992px) {
+    .getapp {
+        padding-top: 48px;
+        padding-bottom: 30px;
+        background: var(--color-light-gray);
+        text-align: center;
+        .container-fixed {
+            justify-content: center;
+            padding-left: var(--gap-xs-desktop);
+            padding-right: var(--gap-xs-desktop);
+        }
+        &-content {
+            flex: 0 0 100%;
+            max-width: 100%;
+            padding-right: 0;
+            font-size: 16px;
+            h2 {
+                font-size: 28px;
+                line-height: 1.285;
+                margin-bottom: 11px;
+            }
+            p {
+                margin-top: 11px;
+            }
+        }
+        &-image {
+            order: -1;
+            flex: 0 0 100%;
+            max-width: 234px;
+            margin-bottom: 14px;
+        }
+        &-columns {
+            justify-content: center;
+        }
+        &-column {
+            margin-top: 20px;
+            padding-bottom: 4px;
+        }
+        &-plus {
+            background: var(--theme-primary);
+            .getapp-content {
+                font-size: 16px;
+                h2 {
+                    font-size: 36px;
+                }
+            }
+        }
+    }
+}
