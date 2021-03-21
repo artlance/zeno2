@@ -466,7 +466,7 @@ button.button-big {
   overflow: auto;
   position: fixed;
   z-index: 5040;
-  background: #1D1D1F;
+  background: #1d1d1f;
   font-size: 20px;
   color: rgba(255, 255, 255, 0.4);
   border-top: 1px solid #333434;
@@ -503,6 +503,10 @@ button.button-big {
   top: 50%;
   width: 16px;
   transform: translateY(-50%);
+}
+
+.smartbanner {
+  top: 78px !important;
 }
 
 .header-global {
@@ -675,6 +679,10 @@ button.button-big {
   }
   .header-sidebar, .header-menu {
     display: none;
+  }
+
+  .smartbanner {
+    top: 56px !important;
   }
 
   .navigation-toggle {

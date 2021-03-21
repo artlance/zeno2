@@ -7,7 +7,7 @@
     overflow: auto;
     position: fixed;
     z-index: 5040;
-    background: #1D1D1F;
+    background: #1d1d1f;
     font-size: 20px;
     color: rgba($white, 0.4);
     border-top: 1px solid #333434;
@@ -53,6 +53,9 @@
             }
         }
     }
+}
+.smartbanner {
+    top: 78px !important;
 }
 .header {
     &-global {
@@ -111,7 +114,8 @@
         flex-grow: 1;
         padding: 0 var(--gap-xl-desktop);
     }
-    &-sidebar {}
+    &-sidebar {
+    }
 }
 .icon {
     &-create {
@@ -242,6 +246,9 @@
         &-menu {
             display: none;
         }
+    }
+    .smartbanner {
+        top: 56px !important;
     }
     .navigation {
         &-toggle {
